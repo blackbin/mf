@@ -15,12 +15,13 @@ import com.jzhu.study.mf.common.AppManager;
 import com.jzhu.study.mf.injection.component.ApplicationComponent;
 import com.jzhu.study.mf.injection.module.ActivityModule;
 import com.jzhu.study.mf.utils.ToastUtils;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 /**
  * 窗口基类
  */
 @SuppressLint("NewApi")
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends RxAppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -28,8 +28,8 @@ public class DemoActivity extends BaseMvpActivity<DemoPresenter> implements Demo
 
     @Override
     protected void initContentView(Bundle savedInstanceState) {
-       // mPresenter.getDemoList(new DemoReq());
-        mPresenter.getDemo(new DemoReq());
+       // mPresenter.getDemoList(new DemoReq(),this);
+        mPresenter.getDemo(new DemoReq(),this);
     }
 
     @Override
