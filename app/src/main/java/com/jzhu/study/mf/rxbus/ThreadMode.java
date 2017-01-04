@@ -1,8 +1,6 @@
 package com.jzhu.study.mf.rxbus;
 
-/**
- * Created by Tcz on 2016/8/30.
- */
+
 public enum ThreadMode {
     /**
      * Subscriber will be called in the same thread, which is posting the event. This is the default. Event delivery

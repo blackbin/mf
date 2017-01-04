@@ -7,10 +7,6 @@ import com.jzhu.study.mf.data.exception.BusinessException;
 import rx.Observable;
 import rx.functions.Func1;
 
-/**
- * Created by Arthas_T on 2016/11/2.
- */
-
 public class BaseFunc<T> implements Func1<BaseResp<T>, Observable<T>> {
     @Override
     public Observable<T> call(BaseResp<T> resp) {

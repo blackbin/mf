@@ -1,10 +1,6 @@
 package com.jzhu.study.mf.rxbus;
 
 import android.util.Log;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
 import rx.Observable;
 import rx.Subscriber;
 import rx.Subscription;
@@ -15,9 +11,9 @@ import rx.subjects.PublishSubject;
 import rx.subjects.SerializedSubject;
 import rx.subjects.Subject;
 
-/**
- * Created by Tcz on 2016/8/30.
- */
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class RxBus {
     private static volatile RxBus defaultInstance;
     private final Subject<Object, Object> bus;
