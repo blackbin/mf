@@ -1,24 +1,16 @@
 package com.jzhu.study.mf.mvp.presenter;
 
-import android.app.Activity;
-
 import com.jzhu.study.mf.base.BaseAbstractPresenter;
 import com.jzhu.study.mf.base.BaseActivity;
-import com.jzhu.study.mf.base.BaseReq;
 import com.jzhu.study.mf.base.BaseResp;
 import com.jzhu.study.mf.base.BaseSubscriber;
 import com.jzhu.study.mf.data.model.DemoReq;
 import com.jzhu.study.mf.data.model.DemoResp;
 import com.jzhu.study.mf.data.service.DemoService;
 import com.jzhu.study.mf.mvp.view.DemoView;
-import com.trello.rxlifecycle.android.ActivityEvent;
-
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
-
-import rx.Observable;
+import java.util.List;
 
 /**
  * Created by jzhu on 2016/11/22.
@@ -33,7 +25,7 @@ public class DemoPresenter extends BaseAbstractPresenter<DemoView> {
     public DemoPresenter() {
     }
 
-    public void getDemoList(DemoReq req, BaseActivity act) {
+    public void getDemoList(String postion, BaseActivity act) {
         if (!checkNetWork()) {
             return;
         }
@@ -43,7 +35,7 @@ public class DemoPresenter extends BaseAbstractPresenter<DemoView> {
             public void onNext(List<DemoResp> list) {
                 mView.getDemoList(list);
             }
-        }, demoService.getDemoList(req),act);
+        }, demoService.getDemoList(postion),act);
     }
 
     public void getDemo(DemoReq req, BaseActivity act) {

@@ -1,0 +1,195 @@
+{
+    "android_gradle_plugin_version": "2.3.0",
+    "apk_path": "/Users/zhujian/code/mf/app/build/outputs/apk/app-debug.apk",
+    "apt": {
+        "app": {
+            "aptArgs": [
+                
+            ],
+            "aptOutput": "/Users/zhujian/code/mf/app/build/generated/source/apt/debug",
+            "disableDiscovery": false,
+            "enabled": true,
+            "processor": null,
+            "processorPath": "/Users/zhujian/.android/build-cache/afc01a2de0532112393e5d6dc49b386dc624fda8/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.7/f60e4926b5f05a62ff73e73b6eb3a856cdc74ddb/dagger-2.7.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar:/Users/zhujian/.android/build-cache/5aed091b5fb0f32fd8d70afbc53dfd8df2234238/output/jars/classes.jar:/Users/zhujian/.android/build-cache/b159690217dcdcb15257c8fdc7ac66580f72e8f6/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.trello/rxlifecycle/1.0/6a38e2cd80f46ecaf6553b2eb5a05eee6d472fdb/rxlifecycle-1.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar:/Users/zhujian/.android/build-cache/2dbea8f1cd3c5e8710d535eaa61e8737aea372de/output/jars/classes.jar:/Users/zhujian/code/mf/baselibrary/build/intermediates/bundles/default/classes.jar:/Users/zhujian/.android/build-cache/eb4e4b319190901fb2af52ef3fe959311d45f0fa/output/jars/classes.jar:/Users/zhujian/.android/build-cache/a556dc1cd2b25e0eaf6c3e48328664db2f5d1c13/output/jars/classes.jar:/Users/zhujian/.android/build-cache/9882fd7fa9f16daeddb6a7318dd28af4a4e08ceb/output/jars/classes.jar:/Users/zhujian/.android/build-cache/f3bd3fa0504bb211472c497abd50eb444a9c721a/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.alibaba/fastjson/1.1.54.android/de873c13032fff0b1dcab39a6fb14a3505bc92bb/fastjson-1.1.54.android.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar:/Users/zhujian/.android/build-cache/e4252c91737bb19f970601b43f86fb5b693f3975/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar:/Users/zhujian/.android/build-cache/bb099946c9ce78ff4b50c7b52c2066410a31b857/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/io.reactivex/rxjava/1.2.1/4e4cfa4adc74521d5966799fa5ab70b733552f68/rxjava-1.2.1.jar:/Users/zhujian/code/mf/networklibrary/build/intermediates/bundles/default/classes.jar:/Users/zhujian/.android/build-cache/e9855f5445cfc69bc6ca7f61b3a2b74a6cd906e8/output/jars/classes.jar:/Users/zhujian/.android/build-cache/64b261c52bb6cc676b3a0499d529292c52c7f6f9/output/jars/classes.jar:/Users/zhujian/.android/build-cache/84c1ce4ce1e96bb73852c77bc5cfffd19de1582d/output/jars/classes.jar:/Users/zhujian/.android/build-cache/f8ae2316c1917b6501af7771bdc8e4535cb5a998/output/jars/classes.jar:/Users/zhujian/.android/build-cache/6d5f03d51d79b7343a04114fbc31d6a28d24662c/output/jars/classes.jar:/Users/zhujian/.android/build-cache/3d8c142b8af2fb8df5c185a00e4c088868221dfa/output/jars/classes.jar:/Users/zhujian/.android/build-cache/2c8395c5c8c145b8f6ccb8bcc30697ddcc061a52/output/jars/classes.jar:/Users/zhujian/.android/build-cache/b3b0760065ef5f8f2040ce05e906eeeccf78b6d4/output/jars/classes.jar:/Users/zhujian/.android/build-cache/c131868f051322dfe8ac3bf9624540ece664afa3/output/jars/classes.jar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/3.4.2/d99260c62d97beae99ed1f779a35a9bf48c094a6/logging-interceptor-3.4.2.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.2/ccde00f7ccc77af5a6d5752e2cb21f6d8998289f/okhttp-3.4.2.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar:/Users/zhujian/.android/build-cache/6a313555da6c3434d8f0fd88e1ff22dca2370a81/output/jars/classes.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-compiler/2.7/65aa7daec6dd64bf4f3208b268c38c6a4fb2b849/dagger-compiler-2.7.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.5.1/2efaf9ce6e27b9b28fed4d7446061d19f19f8613/butterknife-8.5.1.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.trello/rxlifecycle-android/1.0/ade88da12c5cfa0c0914a689ed3beced4003f53a/rxlifecycle-android-1.0.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.trello/rxlifecycle-components/1.0/2e7f9048eebdc68e135b2b13f1eec084883eb5af/rxlifecycle-components-1.0.aar:/Users/zhujian/code/mf/baselibrary/build/outputs/aar/baselibrary-release.aar:/Users/zhujian/code/mf/networklibrary/build/outputs/aar/networklibrary-release.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-producers/2.7/109b30d9c44c037e3bee87e85564fd604a7d432f/dagger-producers-2.7.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/19.0/6ce200f6b23222af3d8abb6b6459e6c44f4bb0e9/guava-19.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.jakewharton.rxbinding/rxbinding/0.4.0/3e0541ea1825e3a52a0cc51bbdb4861958629e2f/rxbinding-0.4.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/25.2.0/recyclerview-v7-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/design/25.2.0/design-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/multidex/1.0.0/multidex-1.0.0.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/jp.wasabeef/glide-transformations/2.0.1/2edd9f5dd1ae0d37bb8278607e933721d422ca58/glide-transformations-2.0.1.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-core-ui/25.2.0/support-core-ui-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/25.2.0/support-v4-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/transition/25.2.0/transition-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-media-compat/25.2.0/support-media-compat-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-core-utils/25.2.0/support-core-utils-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-fragment/25.2.0/support-fragment-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-compat/25.2.0/support-compat-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/25.2.0/appcompat-v7-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/25.2.0/support-vector-drawable-25.2.0.aar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/25.2.0/animated-vector-drawable-25.2.0.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/io.reactivex/rxandroid/1.1.0/70751512690d3c21f2a03717f9e831fc09f60117/rxandroid-1.1.0.aar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-compiler/8.5.1/76253d53698d5a93191ebf72534e9eeb7391b5c3/butterknife-compiler-8.5.1.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.auto.service/auto-service/1.0-rc2/51033a5b8fcf7039159e35b6878f106ccd5fb35f/auto-service-1.0-rc2.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.auto/auto-common/0.6/cf7212b0f8bfef12657b942df8f4f2cf032d3f41/auto-common-0.6.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.squareup/javapoet/1.8.0/e858dc62ef484048540d27d36f3ec2177a3fa9b1/javapoet-1.8.0.jar:/Users/zhujian/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar:/Users/zhujian/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar"
+        }
+    },
+    "apt_libraries": {
+        "dagger": true,
+        "butterknife": true
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "/Users/zhujian/code/mf/app/build/freeline",
+    "build_directory": "/Users/zhujian/code/mf/app/build",
+    "build_script": "./gradlew :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "/Users/zhujian/Library/Android/sdk/build-tools/25.0.0",
+    "build_tools_version": "25.0.0",
+    "check_sources_md5": [
+        
+    ],
+    "compile_sdk_directory": "/Users/zhujian/Library/Android/sdk/platforms/android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.jzhu.study.mf",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "/Users/zhujian/code/mf",
+    "freeline_gradle_plugin_version": "0.8.6",
+    "ignore_resource_ids": [
+        "avd_hide_password_1",
+        "avd_hide_password_2",
+        "avd_hide_password_3",
+        "avd_show_password_1",
+        "avd_show_password_2",
+        "avd_show_password_3"
+    ],
+    "java_home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home",
+    "launcher": "com.jzhu.study.mf.ui.activity.DemoActivity",
+    "main_assets_directory": [
+        "/Users/zhujian/code/mf/app/src/debug/assets",
+        "/Users/zhujian/code/mf/app/src/main/assets"
+    ],
+    "main_jniLibs_directory": [
+        "/Users/zhujian/code/mf/app/src/debug/jniLibs",
+        "/Users/zhujian/code/mf/app/libs"
+    ],
+    "main_jni_directory": [
+        "/Users/zhujian/code/mf/app/src/debug/jni",
+        "/Users/zhujian/code/mf/app/src/main/jni"
+    ],
+    "main_manifest_path": "/Users/zhujian/code/mf/app/src/main/AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "/Users/zhujian/code/mf/app/build/generated/source/r/debug/R.java",
+    "main_res_directory": [
+        "/Users/zhujian/code/mf/app/src/debug/res",
+        "/Users/zhujian/code/mf/app/src/main/res"
+    ],
+    "main_src_directory": [
+        "/Users/zhujian/code/mf/app/src/debug/java",
+        "/Users/zhujian/code/mf/app/src/main/java"
+    ],
+    "module_dependencies": {
+        "app": [
+            "baselibrary",
+            "networklibrary"
+        ],
+        "baselibrary": [
+            
+        ],
+        "networklibrary": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "/Users/zhujian/code/mf/app"
+        },
+        {
+            "name": "baselibrary",
+            "path": "/Users/zhujian/code/mf/baselibrary"
+        },
+        {
+            "name": "networklibrary",
+            "path": "/Users/zhujian/code/mf/networklibrary"
+        }
+    ],
+    "package": "com.jzhu.study.mf",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "/Users/zhujian/code/mf/app/src/debug/assets",
+                "/Users/zhujian/code/mf/app/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhujian/code/mf/app/src/debug/jniLibs",
+                "/Users/zhujian/code/mf/app/libs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhujian/code/mf/app/src/debug/jni",
+                "/Users/zhujian/code/mf/app/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhujian/code/mf/app/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhujian/code/mf/app/src/debug/res",
+                "/Users/zhujian/code/mf/app/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhujian/code/mf/app/src/debug/java",
+                "/Users/zhujian/code/mf/app/src/main/java"
+            ]
+        },
+        "baselibrary": {
+            "main_assets_directory": [
+                "/Users/zhujian/code/mf/baselibrary/src/release/assets",
+                "/Users/zhujian/code/mf/baselibrary/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhujian/code/mf/baselibrary/src/release/jniLibs",
+                "/Users/zhujian/code/mf/baselibrary/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhujian/code/mf/baselibrary/src/release/jni",
+                "/Users/zhujian/code/mf/baselibrary/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhujian/code/mf/baselibrary/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhujian/code/mf/baselibrary/src/release/res",
+                "/Users/zhujian/code/mf/baselibrary/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhujian/code/mf/baselibrary/src/release/java",
+                "/Users/zhujian/code/mf/baselibrary/src/main/java"
+            ]
+        },
+        "networklibrary": {
+            "main_assets_directory": [
+                "/Users/zhujian/code/mf/networklibrary/src/release/assets",
+                "/Users/zhujian/code/mf/networklibrary/src/main/assets"
+            ],
+            "main_jniLibs_directory": [
+                "/Users/zhujian/code/mf/networklibrary/src/release/jniLibs",
+                "/Users/zhujian/code/mf/networklibrary/src/main/jniLibs"
+            ],
+            "main_jni_directory": [
+                "/Users/zhujian/code/mf/networklibrary/src/release/jni",
+                "/Users/zhujian/code/mf/networklibrary/src/main/jni"
+            ],
+            "main_manifest_path": "/Users/zhujian/code/mf/networklibrary/src/main/AndroidManifest.xml",
+            "main_res_directory": [
+                "/Users/zhujian/code/mf/networklibrary/src/release/res",
+                "/Users/zhujian/code/mf/networklibrary/src/main/res"
+            ],
+            "main_src_directory": [
+                "/Users/zhujian/code/mf/networklibrary/src/release/java",
+                "/Users/zhujian/code/mf/networklibrary/src/main/java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        "app": {
+            "enabled": true,
+            "mainClass": "net.orfjackal.retrolambda.Main",
+            "rtJar": "/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar",
+            "supportIncludeFiles": true,
+            "targetJar": "/Users/zhujian/.gradle/caches/modules-2/files-2.1/net.orfjackal.retrolambda/retrolambda/2.3.0/f35f58f7946d2f8be3dcff78aa3114f60aa40051/retrolambda-2.3.0.jar"
+        }
+    },
+    "root_dir": "/Users/zhujian/code/mf",
+    "sdk_directory": "/Users/zhujian/Library/Android/sdk",
+    "use_jdk8": true,
+    "use_system_gradle": false
+}

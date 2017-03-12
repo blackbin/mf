@@ -6,12 +6,10 @@ import com.jzhu.study.mf.data.model.DemoResp;
 import com.jzhu.study.mf.data.net.RetrofitFactory;
 import com.jzhu.study.mf.data.net.api.DemoApi;
 import com.jzhu.study.mf.data.repository.DemoRepository;
-
-import java.util.List;
+import rx.Observable;
 
 import javax.inject.Inject;
-
-import rx.Observable;
+import java.util.List;
 
 /**
  * Created by Arthas_T on 2016/10/17.
@@ -24,7 +22,10 @@ public class DemoRepositoryImpl implements DemoRepository {
     }
 
     @Override
-    public Observable<BaseResp<List<DemoResp>>> getDemoList(DemoReq req) {
+    public Observable<BaseResp<List<DemoResp>>> getDemoList(String postion) {
+        DemoReq req = new DemoReq();
+        req.setShowPosition(postion);
+        req.setDeviceOsType(0);
         return RetrofitFactory.getInstance().create(DemoApi.class).getDemoList(req);
     }
 

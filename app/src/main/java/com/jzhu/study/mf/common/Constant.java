@@ -5,7 +5,7 @@ package com.jzhu.study.mf.common;
  */
 
 public interface Constant {
-    public static final String SERVER_ADDRESS = "";
-    public static final String STATUS_SUCCESS = "SUCCESS";
+     String SERVER_ADDRESS = "https://passenger.vvip-u.com/";
+     String STATUS_SUCCESS = "SUCCESS";
 
 }
