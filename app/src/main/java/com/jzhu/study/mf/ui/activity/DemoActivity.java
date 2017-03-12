@@ -36,7 +36,6 @@ public class DemoActivity extends BaseMvpActivity<DemoPresenter> implements Demo
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         mPresenter.getDemoList(DemoReq.SHOW_POSTION_MAIN, this);
-        textView.setText("111");
         testRX();
     }
 
@@ -54,6 +53,7 @@ public class DemoActivity extends BaseMvpActivity<DemoPresenter> implements Demo
     public void getDemoList(List<DemoResp> list) {
         if (!ObjectUtils.isListEmpty(list)) {
             for (DemoResp resp : list) {
+                textView.setText(resp.getContent());
                 Log.i("zj", resp.getContent());
             }
         }
