@@ -76,7 +76,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     apt 'com.google.dagger:dagger-compiler:2.7'
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
-    apt 'com.alibaba:arouter-compiler:1.0.2'
+    apt 'com.alibaba:arouter-compiler:1.0.4'
     compile project(':baselibrary')
     compile project(':testmodule')
 }

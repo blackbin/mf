@@ -73,5 +73,5 @@ dependencies {
 
     //路由器
     compile 'com.alibaba:arouter-api:1.0.7'
-    apt 'com.alibaba:arouter-compiler:1.0.2'
+    apt 'com.alibaba:arouter-compiler:1.0.4'
 }
