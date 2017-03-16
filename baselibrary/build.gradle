@@ -13,7 +13,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
     }
     buildTypes {
         release {
@@ -65,5 +69,9 @@ dependencies {
 
     //节约时间
     compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //路由器
+    compile 'com.alibaba:arouter-api:1.0.7'
+    apt 'com.alibaba:arouter-compiler:1.0.2'
 }

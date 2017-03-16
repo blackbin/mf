@@ -2,6 +2,10 @@ package com.jzhu.study.mf.ui.activity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
+import butterknife.BindView;
+import butterknife.OnClick;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.jzhu.study.mf.R;
 import com.jzhu.study.mf.base.BaseMvpActivity;
 import com.jzhu.study.mf.data.model.GankFLResp;
@@ -19,7 +23,11 @@ import java.util.List;
 
 public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements GankIoView {
 
+    @BindView(R.id.jump)
+    TextView jump;
+
     private int pageNum = 1;
+
     private int rows = 10;
 
     @Override
@@ -29,7 +37,7 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
 
     @Override
     protected void initContentView(Bundle savedInstanceState) {
-        mPresenter.getList(rows,pageNum, this);
+        mPresenter.getList(rows, pageNum, this);
     }
 
     @Override
@@ -47,7 +55,15 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
         if (!ObjectUtils.isListEmpty(list)) {
             for (GankFLResp resp : list) {
                 Log.i("zj", resp.getUrl());
+                jump.setText(resp.getWho());
             }
         }
+    }
+
+    @OnClick(R.id.jump)
+    public void onClick() {
+//        ARouter.getInstance().build("/test/activity").navigation();
+        ARouter.getInstance().build("/testmodule/activity").navigation();
+
     }
 }
