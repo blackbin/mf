@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 25
@@ -39,6 +40,10 @@ dependencies {
     compile 'com.android.support:design:25.2.0'
     compile 'com.android.support:multidex:1.0.0'
 
+    //mvp
+    compile 'com.google.dagger:dagger:2.7'
+    apt 'com.google.dagger:dagger-compiler:2.7'
+    provided 'javax.annotation:jsr250-api:1.0'
 
     //网络框架
     compile 'com.alibaba:fastjson:1.1.56.android'
