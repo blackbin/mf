@@ -2,10 +2,6 @@ package com.jzhu.study.mf.data.service.impl;
 
 import com.jzhu.study.mf.base.BaseFunc;
 import com.jzhu.study.mf.base.BaseResp;
-import com.jzhu.study.mf.data.model.DemoReq;
-import com.jzhu.study.mf.data.model.DemoResp;
-import com.jzhu.study.mf.data.repository.DemoRepository;
-import com.jzhu.study.mf.data.service.DemoService;
 import rx.Observable;
 
 import javax.inject.Inject;

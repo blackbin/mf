@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':networklibrary'
+include ':app', ':baselibrary', ':TestModule'

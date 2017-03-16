@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNew">
-        <activity android:name=".ui.activity.DemoActivity">
+        <activity android:name=".ui.activity.GankIoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
