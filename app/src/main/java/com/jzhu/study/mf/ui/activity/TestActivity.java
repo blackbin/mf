@@ -1,16 +1,16 @@
 package com.jzhu.study.mf.ui.activity;
 
 import android.os.Bundle;
-import com.alibaba.android.arouter.facade.annotation.Route;
+import android.view.View;
+import butterknife.OnClick;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.jzhu.study.mf.R;
 import com.jzhu.study.mf.base.BaseCompatActivity;
 
 /**
  * Created by jzhu on 2016/11/22.
  */
-@Route(path = "/test/activity")
-public class TestActivity extends BaseCompatActivity{
-
+public class TestActivity extends BaseCompatActivity {
 
     @Override
     protected int getLayoutId() {
@@ -21,4 +21,19 @@ public class TestActivity extends BaseCompatActivity{
     protected void initContentView(Bundle savedInstanceState) {
     }
 
+
+    @OnClick({ R.id.arouter, R.id.test ,R.id.mvp})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.mvp:
+                ARouter.getInstance().build("/app/gankIoActivity").navigation();
+                break;
+            case R.id.arouter:
+                ARouter.getInstance().build("/studyaroutermodule/mainActivity").navigation();
+                break;
+            case R.id.test:
+                ARouter.getInstance().build("/testmodule/activity").navigation();
+                break;
+        }
+    }
 }

@@ -4,8 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 import butterknife.BindView;
-import butterknife.OnClick;
-import com.alibaba.android.arouter.launcher.ARouter;
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jzhu.study.mf.R;
 import com.jzhu.study.mf.base.BaseMvpActivity;
 import com.jzhu.study.mf.data.model.GankFLResp;
@@ -20,7 +19,7 @@ import java.util.List;
 /**
  * Created by jzhu on 2016/11/22.
  */
-
+@Route(path = "/app/gankIoActivity")
 public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements GankIoView {
 
     @BindView(R.id.jump)
@@ -55,15 +54,9 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
         if (!ObjectUtils.isListEmpty(list)) {
             for (GankFLResp resp : list) {
                 Log.i("zj", resp.getUrl());
-                jump.setText(resp.getWho());
+                jump.setText("who:" + resp.getWho());
             }
         }
     }
 
-    @OnClick(R.id.jump)
-    public void onClick() {
-//        ARouter.getInstance().build("/test/activity").navigation();
-        ARouter.getInstance().build("/testmodule/activity").navigation();
-
-    }
 }

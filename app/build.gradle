@@ -78,5 +78,6 @@ dependencies {
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
     apt 'com.alibaba:arouter-compiler:1.0.4'
     compile project(':baselibrary')
+    compile project(':studyaroutermodule')
     compile project(':testmodule')
 }
