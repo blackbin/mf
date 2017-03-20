@@ -11,7 +11,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.jzhu.study.studyaroutermodule.R;
 import com.jzhu.study.studyaroutermodule.R2;
 
-@Route(path = "/studyaroutermodule/secondActivity")
+@Route(path = "/studyaroutermodule/secondActivity", extras = 1)
 public class SecondActivity extends Activity {
 
     @Autowired

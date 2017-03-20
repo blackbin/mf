@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import com.alibaba.android.arouter.facade.Postcard;
@@ -25,31 +26,40 @@ public class MainActivity extends Activity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({ R2.id.with_param, R2.id.with_interceptor,R2.id.with_service })
+    @OnClick({ R2.id.with_param, R2.id.with_interceptor, R2.id.with_service, R2.id.with_url, R2.id.with_no_interceptor })
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.with_param) {
             ARouter.getInstance().build("/studyaroutermodule/firstActivity")
                    .withString("name", "jzhu")
                    .withInt("age", 18)
-                   .navigation(this,555);
+                   .navigation(this, 555);
         }
-        else if(id == R.id.with_interceptor){
+        else if (id == R.id.with_interceptor) {
             ARouter.getInstance().build("/studyaroutermodule/secondActivity")
                    .navigation(this, new NavigationCallback() {
                        @Override
                        public void onFound(Postcard postcard) {
-                           Log.i("zj","onFound");
+                           Log.i("zj", "onFound");
                        }
 
                        @Override
                        public void onLost(Postcard postcard) {
-                           Log.i("zj","onLost");
+                           Log.i("zj", "onLost");
                        }
                    });
-        }else if(id == R.id.with_service){
-            ((TestService) ARouter.getInstance().build("/service/test").navigation()).print(" from TestService");
-
+        }
+        else if (id == R.id.with_no_interceptor) {
+            ARouter.getInstance().build("/studyaroutermodule/secondActivity").greenChannel().navigation();
+        }
+        else if (id == R.id.with_service) {
+//            ((TestService) ARouter.getInstance().build("/service/test").navigation()).print(" from TestService by name");
+            ARouter.getInstance().navigation(TestService.class).print("from TestService by type");
+        }
+        else if (id == R.id.with_url) {
+            ARouter.getInstance().build("/studyaroutermodule/webviewTestActivity")
+                   .withString("url", "file:///android_asset/schame-test.html")
+                   .navigation();
         }
     }
 
@@ -61,7 +71,8 @@ public class MainActivity extends Activity {
         }
         switch (requestCode) {
             case 555:
-                Log.e("zj", data.getStringExtra("name"));
+                String params = String.format("resultCode=%s, name=%s", resultCode, data.getStringExtra("name"));
+                Toast.makeText(this, params, Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;

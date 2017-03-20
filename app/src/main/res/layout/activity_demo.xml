@@ -8,20 +8,20 @@
     <Button
             android:id="@+id/mvp"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="go mvp activity"
+            android:text="MVP 例子"
 
     />
 
     <Button
             android:id="@+id/arouter"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="go arouter module"
+            android:text="arouter 例子"
 
     />
     <Button
             android:id="@+id/test"
             android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="go test module"
+            android:text="test"
 
     />
 </LinearLayout>

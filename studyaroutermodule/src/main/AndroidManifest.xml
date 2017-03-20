@@ -20,6 +20,37 @@
         </activity>
         <activity android:name=".activity.FirstActivity"/>
         <activity android:name=".activity.SecondActivity"/>
+        <activity android:name=".activity.WebviewTestActivity"/>
+        <activity android:name=".activity.SchameTestActivity">
+
+            <!-- Schame -->
+            <intent-filter>
+                <data
+                        android:host="study.jzhu.com"
+                        android:scheme="arouter"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                        android:host="study.jzhu.com"
+                        android:scheme="http"/>
+                <data
+                        android:host="study.jzhu.com"
+                        android:scheme="https"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

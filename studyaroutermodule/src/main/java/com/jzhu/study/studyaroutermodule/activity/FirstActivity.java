@@ -37,15 +37,16 @@ public class FirstActivity extends Activity {
         ARouter.getInstance().inject(this);
         String params = String.format("name=%s, age=%s", name, age);
         text.setText(params);
+
         testService.print("testService");
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         Intent intent = new Intent();
         intent.putExtra("name","jzhu");
         setResult(RESULT_OK,intent);
         finish();
+        super.onBackPressed();
     }
 }
