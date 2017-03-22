@@ -9,6 +9,6 @@ import dagger.Component;
 @PerActivity
 @Component(dependencies = ApplicationComponent.class, modules = {ActivityModule.class,
                                                                  GankIoModule.class})
-public interface GankIoComponent {
+public interface GankIoComponent extends ActivityComponent{
     void inject(GankIoActivity baseActivity);
 }

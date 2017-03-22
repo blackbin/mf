@@ -18,6 +18,7 @@
             android:text="arouter 例子"
 
     />
+
     <Button
             android:id="@+id/test"
             android:layout_width="match_parent" android:layout_height="wrap_content"

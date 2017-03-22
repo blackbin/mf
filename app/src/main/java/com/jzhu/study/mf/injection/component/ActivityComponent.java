@@ -26,7 +26,7 @@ import dagger.Component;
  * A base component upon which fragment's components may depend.
  * Activity-level components should extend this component.
  *
- * Subtypes of ActivityComponent should be decorated with annotation:
+ * Subtypes of UserComponent should be decorated with annotation:
 
  */
 @PerActivity

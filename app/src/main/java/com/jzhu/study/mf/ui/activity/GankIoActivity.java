@@ -44,6 +44,7 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
         DaggerGankIoComponent.builder()
                              .applicationComponent(getApplicationComponent())
                              .gankIoModule(new GankIoModule())
+                             .activityModule(getActivityModule())
                              .build()
                              .inject(this);
         mPresenter.setView(this);
