@@ -1,7 +1,6 @@
 package com.jzhu.study.mf.data.service;
 
-
-import com.jzhu.study.mf.base.BaseService;
+import com.jzhu.study.baselibrary.base.BaseService;
 import com.jzhu.study.mf.data.model.GankFLResp;
 import rx.Observable;
 

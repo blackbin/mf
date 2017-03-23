@@ -4,13 +4,13 @@ import android.os.Bundle;
 import android.view.View;
 import butterknife.OnClick;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.jzhu.study.baselibrary.base.BaseActivity;
 import com.jzhu.study.mf.R;
-import com.jzhu.study.mf.base.BaseCompatActivity;
 
 /**
  * Created by jzhu on 2016/11/22.
  */
-public class TestActivity extends BaseCompatActivity {
+public class TestActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
