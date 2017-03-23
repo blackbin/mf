@@ -6,13 +6,13 @@ import android.widget.TextView;
 import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jzhu.study.baselibrary.base.BaseMvpActivity;
+import com.jzhu.study.baselibrary.base.utils.ObjectUtils;
 import com.jzhu.study.mf.R;
 import com.jzhu.study.mf.data.model.GankFLResp;
 import com.jzhu.study.mf.injection.component.DaggerGankIoComponent;
 import com.jzhu.study.mf.injection.module.GankIoModule;
 import com.jzhu.study.mf.mvp.presenter.GankIoPresenter;
 import com.jzhu.study.mf.mvp.view.GankIoView;
-import com.jzhu.study.mf.utils.ObjectUtils;
 
 import java.util.List;
 
