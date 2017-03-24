@@ -1,9 +1,9 @@
 package com.jzhu.study.mf.injection.module;
 
-import com.jzhu.study.mf.data.repository.GankIoRepository;
-import com.jzhu.study.mf.data.repository.impl.GankIoRepositoryImpl;
-import com.jzhu.study.mf.data.service.GankIoService;
-import com.jzhu.study.mf.data.service.impl.GankIoServiceImp;
+import com.jzhu.study.datalayer.repository.GankIoRepository;
+import com.jzhu.study.datalayer.repository.impl.GankIoRepositoryImpl;
+import com.jzhu.study.datalayer.service.GankIoService;
+import com.jzhu.study.datalayer.service.impl.GankIoServiceImp;
 import dagger.Module;
 import dagger.Provides;
 

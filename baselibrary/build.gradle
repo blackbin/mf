@@ -35,13 +35,13 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //基础控件
-    compile 'com.android.support:support-compat:25.2.0'
+    compile 'com.android.support:support-compat:25.3.0'
 //    compile 'com.android.support:support-core-ui:25.2.0'
 //    compile 'com.android.support:support-core-utils:25.2.0'
 //    compile 'com.android.support:support-fragment:25.2.0'
 //    compile 'com.android.support:cardview-v7:25.2.0'
-    compile 'com.android.support:recyclerview-v7:25.2.0'
-    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile 'com.android.support:design:25.3.0'
     compile 'com.android.support:multidex:1.0.0'
 
     //mvp

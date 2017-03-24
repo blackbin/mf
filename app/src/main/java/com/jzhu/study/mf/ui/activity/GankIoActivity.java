@@ -7,8 +7,8 @@ import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jzhu.study.baselibrary.base.BaseMvpActivity;
 import com.jzhu.study.baselibrary.base.utils.ObjectUtils;
+import com.jzhu.study.datalayer.entities.GankFLEntities;
 import com.jzhu.study.mf.R;
-import com.jzhu.study.mf.data.model.GankFLResp;
 import com.jzhu.study.mf.injection.component.DaggerGankIoComponent;
 import com.jzhu.study.mf.injection.module.GankIoModule;
 import com.jzhu.study.mf.mvp.presenter.GankIoPresenter;
@@ -51,9 +51,9 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
     }
 
     @Override
-    public void getList(List<GankFLResp> list) {
+    public void getList(List<GankFLEntities> list) {
         if (!ObjectUtils.isListEmpty(list)) {
-            for (GankFLResp resp : list) {
+            for (GankFLEntities resp : list) {
                 Log.i("zj", resp.getUrl());
                 jump.setText("who:" + resp.getWho());
             }

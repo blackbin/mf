@@ -1,7 +1,7 @@
 package com.jzhu.study.mf.mvp.view;
 
 import com.jzhu.study.baselibrary.base.BaseView;
-import com.jzhu.study.mf.data.model.GankFLResp;
+import com.jzhu.study.datalayer.entities.GankFLEntities;
 
 import java.util.List;
 
@@ -10,6 +10,6 @@ import java.util.List;
  */
 
 public interface GankIoView extends BaseView {
-    void getList(List<GankFLResp> list);
+    void getList(List<GankFLEntities> list);
 
 }

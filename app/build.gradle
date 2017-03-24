@@ -80,4 +80,5 @@ dependencies {
     compile project(':baselibrary')
     compile project(':studyaroutermodule')
     compile project(':testmodule')
+    compile project(':datalayer')
 }

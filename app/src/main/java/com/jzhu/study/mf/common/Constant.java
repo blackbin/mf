@@ -5,7 +5,5 @@ package com.jzhu.study.mf.common;
  */
 
 public interface Constant {
-     String SERVER_ADDRESS = "http://gank.io/api/data/";
-     String STATUS_SUCCESS = "SUCCESS";
 
 }

@@ -2,7 +2,7 @@ package com.jzhu.study.baselibrary.base;
 
 import android.net.ParseException;
 import android.util.Log;
-import com.jzhu.study.baselibrary.base.exception.BusinessException;
+import com.jzhu.study.baselibrary.base.exception.BusinessGankIoException;
 import org.json.JSONException;
 import retrofit2.adapter.rxjava.HttpException;
 
@@ -27,7 +27,8 @@ public class BaseSubscriber<T> extends DefaultSubscriber<T> {
 
     @Override
     public void onError(Throwable e) {
-        if (e instanceof BusinessException) {
+        if (e instanceof BusinessGankIoException) {
+            //自定义异常处理
             if (baseView != null) {
                 baseView.hideLoading();
             }
