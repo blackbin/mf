@@ -1,18 +1,20 @@
 package com.jzhu.study.mf.ui.activity;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.TextView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.jzhu.study.baselibrary.base.BaseMvpActivity;
 import com.jzhu.study.baselibrary.base.utils.ObjectUtils;
+import com.jzhu.study.commonwidget.RecyclerViewItemDecoration;
 import com.jzhu.study.datalayer.entities.GankFLEntities;
 import com.jzhu.study.mf.R;
 import com.jzhu.study.mf.injection.component.DaggerGankIoComponent;
 import com.jzhu.study.mf.injection.module.GankIoModule;
 import com.jzhu.study.mf.mvp.presenter.GankIoPresenter;
 import com.jzhu.study.mf.mvp.view.GankIoView;
+import com.jzhu.study.mf.ui.adpter.GankIoFLAdapter;
 
 import java.util.List;
 
@@ -22,8 +24,10 @@ import java.util.List;
 @Route(path = "/app/gankIoActivity")
 public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements GankIoView {
 
-    @BindView(R.id.jump)
-    TextView jump;
+    @BindView(R.id.recyclerView)
+    RecyclerView mRecyclerView;
+
+    GankIoFLAdapter mGankIoFLAdapter;
 
     private int pageNum = 1;
 
@@ -37,6 +41,7 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
     @Override
     protected void initContentView(Bundle savedInstanceState) {
         mPresenter.getList(rows, pageNum, this);
+        initRecyclerView();
     }
 
     @Override
@@ -50,14 +55,25 @@ public class GankIoActivity extends BaseMvpActivity<GankIoPresenter> implements 
         mPresenter.setView(this);
     }
 
+    private void initRecyclerView(){
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mRecyclerView.addItemDecoration(new RecyclerViewItemDecoration(
+                RecyclerViewItemDecoration.MODE_HORIZONTAL, getResources().getColor(R.color.colorAccent),
+                0,
+                0,
+                0,
+                0));
+        mGankIoFLAdapter = new GankIoFLAdapter(this);
+        mRecyclerView.setAdapter(mGankIoFLAdapter);
+    }
+
+
     @Override
     public void getList(List<GankFLEntities> list) {
         if (!ObjectUtils.isListEmpty(list)) {
-            for (GankFLEntities resp : list) {
-                Log.i("zj", resp.getUrl());
-                jump.setText("who:" + resp.getWho());
-            }
+            mGankIoFLAdapter.setData(list);
         }
     }
+
 
 }

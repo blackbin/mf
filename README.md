@@ -18,3 +18,7 @@ github地址：https://github.com/JakeWharton/butterknife
 ###arouter
 github地址：https://github.com/alibaba/ARouter
 
+###The Clean Architecture
+
+http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html
+

@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':testmodule', ':studyaroutermodule', ':datalayer'
+include ':app', ':baselibrary', ':testmodule', ':studyaroutermodule', ':datalayer', ':commonwidget'

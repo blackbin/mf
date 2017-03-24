@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonwidget/commonwidget.iml" filepath="$PROJECT_DIR$/commonwidget/commonwidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/datalayer/datalayer.iml" filepath="$PROJECT_DIR$/datalayer/datalayer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf.iml" filepath="$PROJECT_DIR$/mf.iml" />
       <module fileurl="file://$PROJECT_DIR$/studyaroutermodule/studyaroutermodule.iml" filepath="$PROJECT_DIR$/studyaroutermodule/studyaroutermodule.iml" />
