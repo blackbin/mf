@@ -1,24 +1,24 @@
 #学习
 
-###mvp
+###mvp  
 github地址：https://github.com/zhujian1989/mf
 
-###retrofit
+###retrofit  
 github地址：https://github.com/square/retrofit
 
-###dagger2
+###dagger2  
 github地址：https://github.com/google/dagger
 
-###glide
+###glide  
 github地址：https://github.com/bumptech/glide
 
-###butterknife
+###butterknife  
 github地址：https://github.com/JakeWharton/butterknife
 
-###arouter
+###arouter  
 github地址：https://github.com/alibaba/ARouter
 
-###The Clean Architecture
+###The Clean Architecture  
 
 http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html
 
