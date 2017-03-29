@@ -2,7 +2,6 @@ package com.jzhu.study.datalayer.net;
 
 import com.jzhu.study.datalayer.common.Constant;
 import com.jzhu.study.datalayer.net.fastjson.FastJsonConverterFactory;
-import com.jzhu.study.datalayer.net.interceptor.FakeInterceptor;
 import com.jzhu.study.datalayer.net.interceptor.HttpInterceptor;
 import com.jzhu.study.datalayer.net.interceptor.TimeoutIntercepter;
 import okhttp3.OkHttpClient;
@@ -58,7 +57,7 @@ public class RetrofitFactory {
                 .readTimeout(20, TimeUnit.SECONDS)
                 .addInterceptor(initLoggingInterceptor())
                 .addInterceptor(new HttpInterceptor())
-                .addInterceptor(new FakeInterceptor("/api/data/%E7%A6%8F%E5%88%A9/10/1", FakeInterceptor.mockJson()))
+//                .addInterceptor(new FakeInterceptor("/api/data/%E7%A6%8F%E5%88%A9/10/1", FakeInterceptor.mockJson()))
                 .addInterceptor(new TimeoutIntercepter())
                 .build();
         return httpClient;

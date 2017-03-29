@@ -28,6 +28,3 @@ mvp+dagger2
 
 
 
-
-
-
