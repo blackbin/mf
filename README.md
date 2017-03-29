@@ -1,15 +1,15 @@
-##MF简介  
+## MF简介  
 该项目主要目的是学习与交流使用  
 针对主流第三方库或者框架进行实践  
 欢迎大家一起讨论学习  
 感谢 http://gank.io 提供的api帮助学习  
 
-##更新 
+## 更新 
 mvp+dagger2  
 隔离出data层  
 利用gank提供的api作为数据测试  
 
-##主流三方库
+## 主流三方库
 
 [The Clean Architecture](http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)   
 [retrofit2](https://github.com/square/retrofit)   
@@ -19,7 +19,7 @@ mvp+dagger2
 [arouter](https://github.com/alibaba/ARouter)   
   
 
-##记录一些问题以及解决方案 
+## 记录一些问题以及解决方案 
 [Retrofit2 如何模拟数据返回](http://www.jianshu.com/p/357443b76185)   
 [ButterKnife module中使用的坑](http://www.jianshu.com/p/65bab5cc4c25)   
 [Apk dex分包问题记录](http://www.jianshu.com/p/7eb228d56d76)   
