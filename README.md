@@ -5,9 +5,10 @@
 感谢 http://gank.io 提供的api帮助学习  
 
 ## 更新 
-mvp+dagger2  
-隔离出data层  
-利用gank提供的api作为数据测试  
+1.  mvp+dagger2  
+2.  隔离出data层  
+3.  利用gank提供的api作为数据测试  
+4.  增加拦截器模拟测试数据  
 
 ## 主流三方库
 
