@@ -22,7 +22,7 @@ public class TestActivity extends BaseActivity {
     }
 
 
-    @OnClick({ R.id.arouter, R.id.test ,R.id.mvp})
+    @OnClick({ R.id.arouter, R.id.test ,R.id.mvp,R.id.lottie})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mvp:
@@ -33,6 +33,9 @@ public class TestActivity extends BaseActivity {
                 break;
             case R.id.test:
                 ARouter.getInstance().build("/testmodule/activity").navigation();
+                break;
+            case R.id.lottie:
+                ARouter.getInstance().build("/lottiemodule/LottieMainActivity").navigation();
                 break;
         }
     }

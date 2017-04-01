@@ -74,4 +74,8 @@ dependencies {
     //路由器
     compile 'com.alibaba:arouter-api:1.0.7'
     apt 'com.alibaba:arouter-compiler:1.0.4'
+
+    //json动画
+    compile 'com.airbnb.android:lottie:2.0.0-beta3'
+
 }

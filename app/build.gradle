@@ -81,4 +81,5 @@ dependencies {
     compile project(':testmodule')
     compile project(':datalayer')
     compile project(':commonwidget')
+    compile project(':lottiemodule')
 }
