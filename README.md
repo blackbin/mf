@@ -6,13 +6,13 @@
 
 <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/3.png" width="200">
 
-## 更新 
+## 持续更新ing 
 1.  mvp+dagger2  
 2.  隔离出data层  
 3.  利用gank提供的api作为数据测试  
 4.  增加拦截器模拟测试数据  
 5.  lottie实践  
-6.  Chuck实践，如果你使用 OkHttp的话，这个库可以帮助你拦截并记录所有的HTTP请求与响应。它还提供了一个来显示内容。
+6.  Chuck实践
 
 ## 那些年应该学习和实践的第三方库与框架
 
