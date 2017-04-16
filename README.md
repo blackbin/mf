@@ -4,7 +4,7 @@
 欢迎大家一起讨论学习  
 感谢 http://gank.io 提供的api帮助学习  
 
-<img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123635.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123635.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123736.png" width="200">
+<img src="https://github.com/zhujian1989/mf/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/3.png" width="200">
 
 ## 更新 
 1.  mvp+dagger2  
