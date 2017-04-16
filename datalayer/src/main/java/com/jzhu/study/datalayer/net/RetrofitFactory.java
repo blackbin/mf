@@ -1,13 +1,15 @@
 package com.jzhu.study.datalayer.net;
 
+import com.jzhu.study.baselibrary.base.BaseApplication;
 import com.jzhu.study.datalayer.common.Constant;
-import com.jzhu.study.datalayer.net.fastjson.FastJsonConverterFactory;
 import com.jzhu.study.datalayer.net.interceptor.HttpInterceptor;
 import com.jzhu.study.datalayer.net.interceptor.TimeoutIntercepter;
+import com.readystatesoftware.chuck.ChuckInterceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +24,8 @@ public class RetrofitFactory {
     private RetrofitFactory() {
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)      //访问主机地址
-                .addConverterFactory(FastJsonConverterFactory.create())  //解析方式
+//                .addConverterFactory(FastJsonConverterFactory.create())  //解析方式
+                .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .client(genericClient())
                 .build();
@@ -57,6 +60,7 @@ public class RetrofitFactory {
                 .readTimeout(20, TimeUnit.SECONDS)
                 .addInterceptor(initLoggingInterceptor())
                 .addInterceptor(new HttpInterceptor())
+                .addInterceptor(new ChuckInterceptor(BaseApplication.getContext()))
 //                .addInterceptor(new FakeInterceptor("/api/data/%E7%A6%8F%E5%88%A9/10/1", FakeInterceptor.mockJson()))
                 .addInterceptor(new TimeoutIntercepter())
                 .build();

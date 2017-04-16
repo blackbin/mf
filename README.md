@@ -4,22 +4,26 @@
 欢迎大家一起讨论学习  
 感谢 http://gank.io 提供的api帮助学习  
 
+
 ## 更新 
 1.  mvp+dagger2  
 2.  隔离出data层  
 3.  利用gank提供的api作为数据测试  
 4.  增加拦截器模拟测试数据  
 5.  lottie实践  
+6.  Chuck实践，如果你使用 OkHttp的话，这个库可以帮助你拦截并记录所有的HTTP请求与响应。它还提供了一个来显示内容。
 
-## 主流三方库
+## 那些年应该学习和实践的第三方库
 
 [The Clean Architecture](http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)   
 [retrofit2](https://github.com/square/retrofit)   
 [dagger2](https://github.com/google/dagger)   
 [glide](https://github.com/bumptech/glide)   
 [butterknife](https://github.com/JakeWharton/butterknife)   
-[arouter](https://github.com/alibaba/ARouter)   
-  
+[arouter](https://github.com/alibaba/ARouter)  
+[lottie](https://github.com/airbnb/lottie-android)   
+
+ 
 
 ## 记录一些问题以及解决方案 
 [Retrofit2 如何模拟数据返回](http://www.jianshu.com/p/357443b76185)   

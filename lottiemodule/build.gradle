@@ -3,12 +3,12 @@ apply plugin: 'android-apt'
 apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.jakewharton.butterknife'
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -32,9 +32,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    apt 'com.google.dagger:dagger-compiler:2.7'
-    apt 'com.jakewharton:butterknife-compiler:8.5.1'
-    apt 'com.alibaba:arouter-compiler:1.0.4'
-    testCompile 'junit:junit:4.12'
+    apt "com.google.dagger:dagger-compiler:$dagger2Version"
+    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    apt "com.alibaba:arouter-compiler:$arouterCompilerVersion"
     compile project(':baselibrary')
 }

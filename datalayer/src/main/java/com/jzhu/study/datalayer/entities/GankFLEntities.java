@@ -15,7 +15,7 @@ package com.jzhu.study.datalayer.entities;
 
 public class GankFLEntities {
 
-    private Long _id ;
+    private String _id ;
     private String createAt ;
     private String desc;
     private String publishedAt;
@@ -25,11 +25,11 @@ public class GankFLEntities {
     private boolean use;
     private String who;
 
-    public Long get_id() {
+    public String get_id() {
         return _id;
     }
 
-    public void set_id(Long _id) {
+    public void set_id(String _id) {
         this._id = _id;
     }
 

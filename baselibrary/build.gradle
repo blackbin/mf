@@ -3,12 +3,12 @@ apply plugin: 'com.jakewharton.butterknife'
 apply plugin: 'android-apt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
@@ -35,47 +35,52 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     //基础控件
-    compile 'com.android.support:support-compat:25.3.0'
+    compile "com.android.support:support-compat:$supportLibVersion"
 //    compile 'com.android.support:support-core-ui:25.2.0'
 //    compile 'com.android.support:support-core-utils:25.2.0'
 //    compile 'com.android.support:support-fragment:25.2.0'
 //    compile 'com.android.support:cardview-v7:25.2.0'
-    compile 'com.android.support:recyclerview-v7:25.3.0'
-    compile 'com.android.support:design:25.3.0'
-    compile 'com.android.support:multidex:1.0.0'
+    compile "com.android.support:recyclerview-v7:$supportLibVersion"
+    compile "com.android.support:design:$supportLibVersion"
+    compile "com.android.support:multidex:$multidexVersion"
 
     //mvp
-    compile 'com.google.dagger:dagger:2.7'
-    apt 'com.google.dagger:dagger-compiler:2.7'
-    provided 'javax.annotation:jsr250-api:1.0'
+    compile "com.google.dagger:dagger:$dagger2Version"
+    apt "com.google.dagger:dagger-compiler:$dagger2Version"
+    provided "javax.annotation:jsr250-api:$annotationVersion"
 
     //网络框架
-    compile 'com.alibaba:fastjson:1.1.56.android'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
-    compile 'com.squareup.okhttp3:okhttp:3.4.2'
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    compile "com.alibaba:fastjson:$fastjsonVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofit2Version"
+    compile "com.squareup.okhttp3:okhttp:$okhttp3Version"
+    compile "com.squareup.retrofit2:retrofit:$retrofit2Version"
+    compile "com.squareup.okhttp3:logging-interceptor:$logInterceptorVersion"
+    compile "com.squareup.retrofit2:converter-gson:$retrofit2Version"
+    compile "com.google.code.gson:gson:$gsonVersion"
+
+    //网络响应拦截器
+    compile "com.readystatesoftware.chuck:library:$chuckVersion"
 
     //图片框架
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'jp.wasabeef:glide-transformations:2.0.1'
-    compile 'com.nineoldandroids:library:2.4.0'
+    compile "com.github.bumptech.glide:glide:$glideVersion"
+    compile "jp.wasabeef:glide-transformations:$glideTransformationsVersion"
+    compile "com.nineoldandroids:library:$nineoldandroidsVersion"
 
     //RX相关
-    compile 'io.reactivex:rxandroid:1.0.1'
-    compile 'com.trello:rxlifecycle:1.0'
-    compile 'com.trello:rxlifecycle-android:1.0'
-    compile 'com.trello:rxlifecycle-components:1.0'
+    compile "io.reactivex:rxandroid:$rxandroidVersion"
+    compile "com.trello:rxlifecycle:$rxlifecycleVersion"
+    compile "com.trello:rxlifecycle-android:$rxlifecycleVersion"
+    compile "com.trello:rxlifecycle-components:$rxlifecycleVersion"
 
     //节约时间
-    compile 'com.jakewharton:butterknife:8.5.1'
-    apt 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile "com.jakewharton:butterknife:$butterknifeVersion"
+    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
 
     //路由器
-    compile 'com.alibaba:arouter-api:1.0.7'
-    apt 'com.alibaba:arouter-compiler:1.0.4'
+    compile "com.alibaba:arouter-api:$arouterVersion"
+    apt "com.alibaba:arouter-compiler:$arouterCompilerVersion"
 
     //json动画
-    compile 'com.airbnb.android:lottie:2.0.0-beta3'
+    compile "com.airbnb.android:lottie:$lottieVersion"
 
 }

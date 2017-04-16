@@ -3,12 +3,13 @@ apply plugin: 'android-apt'
 apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.0"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
     defaultConfig {
         applicationId "com.jzhu.study.mf"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -73,9 +74,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    apt 'com.google.dagger:dagger-compiler:2.7'
-    apt 'com.jakewharton:butterknife-compiler:8.5.1'
-    apt 'com.alibaba:arouter-compiler:1.0.4'
+    apt "com.google.dagger:dagger-compiler:$dagger2Version"
+    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    apt "com.alibaba:arouter-compiler:$arouterCompilerVersion"
     compile project(':baselibrary')
     compile project(':studyaroutermodule')
     compile project(':testmodule')
