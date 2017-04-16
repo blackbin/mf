@@ -11,27 +11,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e53fb4-9357-4492-95f6-cb8ca9d05a7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot/device-2017-04-16-123635.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot/device-2017-04-16-123716.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/screenshot/device-2017-04-16-123736.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-25.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestModule/build.gradle" afterPath="$PROJECT_DIR$/TestModule/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baselibrary/build.gradle" afterPath="$PROJECT_DIR$/baselibrary/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baselibrary/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/baselibrary/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commonwidget/build.gradle" afterPath="$PROJECT_DIR$/commonwidget/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datalayer/build.gradle" afterPath="$PROJECT_DIR$/datalayer/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datalayer/src/main/java/com/jzhu/study/datalayer/entities/GankFLEntities.java" afterPath="$PROJECT_DIR$/datalayer/src/main/java/com/jzhu/study/datalayer/entities/GankFLEntities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/datalayer/src/main/java/com/jzhu/study/datalayer/net/RetrofitFactory.java" afterPath="$PROJECT_DIR$/datalayer/src/main/java/com/jzhu/study/datalayer/net/RetrofitFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lottiemodule/build.gradle" afterPath="$PROJECT_DIR$/lottiemodule/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lottiemodule/src/main/assets/splash.json" afterPath="$PROJECT_DIR$/lottiemodule/src/main/assets/splash.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/studyaroutermodule/build.gradle" afterPath="$PROJECT_DIR$/studyaroutermodule/build.gradle" />
-    </list>
+    <list default="true" id="50e53fb4-9357-4492-95f6-cb8ca9d05a7b" name="Default" comment="" />
     <ignored path="mf.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -76,21 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="268">
               <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/studyaroutermodule/src/main/java/com/jzhu/study/studyaroutermodule/activity/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -9300,14 +9270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/studyaroutermodule/src/main/java/com/jzhu/study/studyaroutermodule/activity/SchameTestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -9322,6 +9284,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
           <folding />
         </state>
       </provider>

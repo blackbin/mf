@@ -4,6 +4,7 @@
 欢迎大家一起讨论学习  
 感谢 http://gank.io 提供的api帮助学习  
 
+<img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123635.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123635.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/device-2017-04-16-123736.png" width="200">
 
 ## 更新 
 1.  mvp+dagger2  
@@ -13,7 +14,7 @@
 5.  lottie实践  
 6.  Chuck实践，如果你使用 OkHttp的话，这个库可以帮助你拦截并记录所有的HTTP请求与响应。它还提供了一个来显示内容。
 
-## 那些年应该学习和实践的第三方库
+## 那些年应该学习和实践的第三方库与框架
 
 [The Clean Architecture](http://blog.8thlight.com/uncle-bob/2012/08/13/the-clean-architecture.html)   
 [retrofit2](https://github.com/square/retrofit)   
@@ -22,6 +23,7 @@
 [butterknife](https://github.com/JakeWharton/butterknife)   
 [arouter](https://github.com/alibaba/ARouter)  
 [lottie](https://github.com/airbnb/lottie-android)   
+[chuck](https://github.com/jgilfelt/chuck)   
 
  
 
