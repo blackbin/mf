@@ -24,6 +24,16 @@ public class SchameTestActivity extends Activity {
             public void onLost(Postcard postcard) {
                 finish();
             }
+
+            @Override
+            public void onArrival(Postcard postcard) {
+
+            }
+
+            @Override
+            public void onInterrupt(Postcard postcard) {
+
+            }
         });
     }
 }

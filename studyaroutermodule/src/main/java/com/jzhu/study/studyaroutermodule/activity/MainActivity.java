@@ -47,6 +47,16 @@ public class MainActivity extends Activity {
                        public void onLost(Postcard postcard) {
                            Log.i("zj", "onLost");
                        }
+
+                       @Override
+                       public void onArrival(Postcard postcard) {
+
+                       }
+
+                       @Override
+                       public void onInterrupt(Postcard postcard) {
+
+                       }
                    });
         }
         else if (id == R.id.with_no_interceptor) {

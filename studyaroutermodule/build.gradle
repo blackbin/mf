@@ -36,6 +36,5 @@ dependencies {
     apt "com.google.dagger:dagger-compiler:$dagger2Version"
     apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     apt "com.alibaba:arouter-compiler:$arouterCompilerVersion"
-    testCompile 'junit:junit:4.12'
     compile project(':baselibrary')
 }

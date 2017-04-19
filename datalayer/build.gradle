@@ -29,7 +29,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     apt "com.google.dagger:dagger-compiler:$dagger2Version"
-    testCompile 'junit:junit:4.12'
     compile project(':baselibrary')
 //    debugCompile 'com.readystatesoftware.chuck:library:1.0.4'
 //    releaseCompile 'com.readystatesoftware.chuck:library-no-op:1.0.4'
