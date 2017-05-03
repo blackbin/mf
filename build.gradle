@@ -52,5 +52,5 @@ ext {
     glideTransformationsVersion='2.0.1'
     nineoldandroidsVersion='2.4.0'
     chuckVersion='1.0.4'
-    rxbinding='2.0.0'
+    rxbinding='1.0.0'
 }

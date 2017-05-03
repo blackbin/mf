@@ -84,9 +84,10 @@ dependencies {
     compile "com.airbnb.android:lottie:$lottieVersion"
 
     //rxbinding
-//    compile "com.jakewharton.rxbinding2:rxbinding:$rxbinding"
-//    compile "com.jakewharton.rxbinding2:rxbinding-support-v4:$rxbinding"
-//    compile "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$rxbinding"
-//    compile "com.jakewharton.rxbinding2:rxbinding-design:$rxbinding"
-//    compile "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:$rxbinding"
+    compile "com.jakewharton.rxbinding:rxbinding:$rxbinding"
+    compile "com.jakewharton.rxbinding:rxbinding-support-v4:$rxbinding"
+    compile "com.jakewharton.rxbinding:rxbinding-appcompat-v7:$rxbinding"
+    compile "com.jakewharton.rxbinding:rxbinding-design:$rxbinding"
+    compile "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$rxbinding"
+
 }
