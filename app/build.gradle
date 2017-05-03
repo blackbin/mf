@@ -74,13 +74,14 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-    apt "com.google.dagger:dagger-compiler:$dagger2Version"
-    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
-    apt "com.alibaba:arouter-compiler:$arouterCompilerVersion"
+    apt  "com.google.dagger:dagger-compiler:$dagger2Version"
+    apt  "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    apt  "com.alibaba:arouter-compiler:$arouterCompilerVersion"
     compile project(':baselibrary')
     compile project(':studyaroutermodule')
     compile project(':testmodule')
     compile project(':datalayer')
     compile project(':commonwidget')
     compile project(':lottiemodule')
+    compile project(':rxbindingmodule')
 }
