@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':testmodule', ':studyaroutermodule', ':datalayer', ':commonwidget', ':lottiemodule'
+include ':app', ':baselibrary', ':testmodule', ':studyaroutermodule', ':datalayer', ':commonwidget', ':lottiemodule', ':rxbindingmodule'

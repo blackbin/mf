@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/commonwidget" />
             <option value="$PROJECT_DIR$/datalayer" />
             <option value="$PROJECT_DIR$/lottiemodule" />
+            <option value="$PROJECT_DIR$/rxbindingmodule" />
             <option value="$PROJECT_DIR$/studyaroutermodule" />
             <option value="$PROJECT_DIR$/testmodule" />
           </set>
