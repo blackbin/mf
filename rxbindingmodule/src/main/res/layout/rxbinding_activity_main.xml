@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_shake"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
-              android:text="待续"
-              android:gravity="center"
-
-    />
-
+        android:layout_height="wrap_content"
+        android:text="单点防抖"
+        />
+    <Button
+        android:id="@+id/btn_doubleclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多次点击"
+        />
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击倒计时"
+        />
 </LinearLayout>
