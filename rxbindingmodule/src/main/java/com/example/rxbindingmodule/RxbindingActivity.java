@@ -1,6 +1,7 @@
 package com.example.rxbindingmodule;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -34,7 +35,12 @@ public class RxbindingActivity extends BaseActivity {
     @BindView(R2.id.btn_time)
     Button timeBtn;
 
-    public static int SECOND = 60;
+    @BindView(R2.id.btn_long_click)
+    Button longClickBtn;
+
+    public static int SECOND = 10;
+
+    private Observable<Void> timeObservable;
 
     @Override
     protected int getLayoutId() {
@@ -46,6 +52,7 @@ public class RxbindingActivity extends BaseActivity {
         initShakeListener();
         initDoubleClickListener();
         initTimerListener();
+        initLongClickListener();
     }
 
     private void initShakeListener() {
@@ -80,8 +87,6 @@ public class RxbindingActivity extends BaseActivity {
                 });
     }
 
-    private Observable<Void> timeObservable;
-
     private void initTimerListener() {
         timeObservable = RxView.clicks(timeBtn)
                 .throttleFirst(1, TimeUnit.SECONDS)
@@ -95,8 +100,8 @@ public class RxbindingActivity extends BaseActivity {
         timeObservable.subscribe(new Action1<Void>() {
             @Override
             public void call(Void aVoid) {
-                Observable.interval(1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
-                        .take(SECOND)
+                Observable.interval(0, 1, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
+                        .take(SECOND + 1)
                         .subscribe(new Observer<Long>() {
                             @Override
                             public void onCompleted() {
@@ -117,5 +122,22 @@ public class RxbindingActivity extends BaseActivity {
                         });
             }
         });
+    }
+
+    private void initLongClickListener(){
+        RxView.longClicks(longClickBtn)
+                .subscribe(new Action1<Void>() {
+                    @Override
+                    public void call(Void aVoid) {
+                    showToast("长按");
+                    }
+                });
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(null != timeObservable){
+            timeObservable.unsubscribeOn(AndroidSchedulers.mainThread());
+        }
     }
 }
