@@ -1,37 +1,38 @@
 package com.example.rxbindingmodule;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatCheckBox;
-import android.util.Log;
-import android.view.TextureView;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
-
+import butterknife.BindView;
 import com.alibaba.android.arouter.facade.annotation.Route;
-import com.alibaba.android.arouter.utils.TextUtils;
 import com.jakewharton.rxbinding.view.RxView;
 import com.jakewharton.rxbinding.widget.RxCompoundButton;
 import com.jakewharton.rxbinding.widget.RxTextView;
 import com.jzhu.study.baselibrary.base.BaseActivity;
-import com.jzhu.study.baselibrary.base.utils.ToastUtils;
-
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import butterknife.BindView;
+import com.tbruyelle.rxpermissions.RxPermissions;
 import rx.Observable;
 import rx.Observer;
-import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
-import rx.functions.Func2;
+import rx.functions.Func1;
 import rx.functions.Func3;
+import rx.schedulers.Schedulers;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by jzhu on 2017/5/3.
  */
 @Route(path = "/rxbindingmodule/RxbindingActivity")
 public class RxbindingActivity extends BaseActivity {
+
+    @BindView(R2.id.btn_rxpermissions)
+    Button rxPerimissionsBtn;
 
     @BindView(R2.id.btn_shake)
     Button shakeBtn;
@@ -54,6 +55,9 @@ public class RxbindingActivity extends BaseActivity {
     @BindView(R2.id.et_pwd)
     EditText pwdEt;
 
+    @BindView(R2.id.et_search)
+    EditText searchEt;
+
     @BindView(R2.id.cb_protocol)
     AppCompatCheckBox protocolCb;
 
@@ -74,6 +78,8 @@ public class RxbindingActivity extends BaseActivity {
         initTimerListener();
         initLongClickListener();
         initLoginListener();
+        initPermissionsListener();
+        initSearchListener();
     }
 
     private void initShakeListener() {
@@ -171,7 +177,68 @@ public class RxbindingActivity extends BaseActivity {
             }
         });
 
+    }
 
+    private void initPermissionsListener() {
+        final RxPermissions rxPermissions = new RxPermissions(this);
+        RxView.clicks(rxPerimissionsBtn).
+                throttleFirst(1, TimeUnit.SECONDS)
+              .subscribeOn(AndroidSchedulers.mainThread())
+              .compose(rxPermissions.ensure(Manifest.permission.CAMERA))
+              .subscribe(new Action1<Boolean>() {
+                  @Override
+                  public void call(Boolean granted) {
+                      if (granted) {
+                          showToast("允许camera权限");
+                      }
+                      else {
+                          showToast("拒绝camera权限");
+                      }
+                  }
+              });
+
+    }
+
+    private void initSearchListener() {
+        RxTextView.textChanges(searchEt)
+                  .debounce(500, TimeUnit.MILLISECONDS)
+                  .observeOn(AndroidSchedulers.mainThread())
+                  .map(new Func1<CharSequence, String>() {
+                      @Override
+                      public String call(CharSequence charSequence) {
+                          String searchKey = charSequence.toString();
+                          if (TextUtils.isEmpty(searchKey)) {
+                              showToast("搜索关键字不能为null");
+                          }
+                          else {
+                              showToast("0.5秒内没有操作，关键字:" + searchKey);
+                          }
+                          return searchKey;
+                      }
+                  })
+                  .observeOn(Schedulers.io())
+                  .map(new Func1<String, List<String>>() {
+                      @Override
+                      public List<String> call(String searchKey) {
+                          return search(searchKey);
+                      }
+                  })
+                  .observeOn(AndroidSchedulers.mainThread())
+                  .subscribe(new Action1<List<String>>() {
+                      @Override
+                      public void call(List<String> strings) {
+
+                      }
+                  });
+
+    }
+
+    private List<String> search(String key) {
+        if (TextUtils.isEmpty(key)) {
+            return null;
+        }
+
+        return new ArrayList<String>();
     }
 
     @Override

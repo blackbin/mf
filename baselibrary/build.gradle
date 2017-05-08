@@ -90,4 +90,8 @@ dependencies {
     compile "com.jakewharton.rxbinding:rxbinding-design:$rxbinding"
     compile "com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$rxbinding"
 
+    //rxpermissions
+    compile "com.tbruyelle.rxpermissions:rxpermissions:$rxpermissions"
+
+
 }

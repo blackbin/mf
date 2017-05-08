@@ -9,6 +9,12 @@
         android:orientation="vertical">
 
         <Button
+                android:id="@+id/btn_rxpermissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.0动态权限"/>
+
+        <Button
             android:id="@+id/btn_long_click"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,12 +38,13 @@
             android:layout_height="wrap_content"
             android:text="点击倒计时" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorPrimary" />
+        <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="搜索"/>
+
 
         <EditText
             android:id="@+id/et_username"
@@ -65,12 +72,6 @@
             android:layout_height="wrap_content"
             android:text="xx协议" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/colorPrimary" />
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>

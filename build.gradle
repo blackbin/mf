@@ -53,4 +53,6 @@ ext {
     nineoldandroidsVersion='2.4.0'
     chuckVersion='1.0.4'
     rxbinding='1.0.0'
+    rxpermissions='0.9.4@aar'
+
 }

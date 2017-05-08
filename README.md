@@ -4,7 +4,7 @@
 欢迎大家一起讨论学习  
 感谢 http://gank.io 提供的api帮助学习  
 
-<img src="https://github.com/zhujian1989/mf/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/3.png" width="200">
+<img src="https://github.com/zhujian1989/mf/blob/master/screenshot/1.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/2.png" width="200"> <img src="https://github.com/zhujian1989/mf/blob/master/screenshot/3.png" width="200"><img src="https://github.com/zhujian1989/mf/blob/master/screenshot/4.png" width="200">
 
 ## 持续更新ing 
 1.  mvp+dagger2  
@@ -13,6 +13,7 @@
 4.  增加拦截器模拟测试数据  
 5.  lottie实践  
 6.  Chuck实践
+7.  RxBinding & RxPermissions
 
 ## 那些年应该学习和实践的第三方库与框架
 
@@ -24,6 +25,8 @@
 [arouter](https://github.com/alibaba/ARouter)  
 [lottie](https://github.com/airbnb/lottie-android)   
 [chuck](https://github.com/jgilfelt/chuck)   
+[RxBinding](https://github.com/JakeWharton/RxBinding)   
+[RxPermissions](https://github.com/tbruyelle/RxPermissions)   
 
  
 
