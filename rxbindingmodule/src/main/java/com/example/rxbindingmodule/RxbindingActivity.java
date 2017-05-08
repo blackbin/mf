@@ -162,7 +162,7 @@ public class RxbindingActivity extends BaseActivity {
         Observable.combineLatest(usernameOb, pwdOb, protocolOb, new Func3<CharSequence, CharSequence, Boolean, Boolean>() {
             @Override
             public Boolean call(CharSequence username, CharSequence pwd, Boolean isChecked) {
-                return !TextUtils.isEmpty(username) && !TextUtils.isEmpty(username) && isChecked;
+                return !TextUtils.isEmpty(username) && !TextUtils.isEmpty(pwd) && isChecked;
             }
         }).subscribe(new Action1<Boolean>() {
             @Override
