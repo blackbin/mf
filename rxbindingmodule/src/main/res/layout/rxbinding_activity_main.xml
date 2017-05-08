@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="登陆" />
+            android:text="登录" />
 
         <android.support.v7.widget.AppCompatCheckBox
             android:id="@+id/cb_protocol"
