@@ -78,10 +78,14 @@ dependencies {
     apt  "com.jakewharton:butterknife-compiler:$butterknifeVersion"
     apt  "com.alibaba:arouter-compiler:$arouterCompilerVersion"
     compile project(':baselibrary')
-    compile project(':studyaroutermodule')
-    compile project(':testmodule')
     compile project(':datalayer')
     compile project(':commonwidget')
-    compile project(':lottiemodule')
-    compile project(':rxbindingmodule')
+
+    if(rootProject.ext.isModule){
+        compile project(':studyaroutermodule')
+        compile project(':testmodule')
+        compile project(':lottiemodule')
+        compile project(':rxbindingmodule')
+    }
+
 }

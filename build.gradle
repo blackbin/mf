@@ -55,4 +55,5 @@ ext {
     rxbinding='1.0.0'
     rxpermissions='0.9.4@aar'
 
+    isModule = true
 }
